@@ -25,10 +25,11 @@ public class NovaEmpresa extends HttpServlet {
 		System.out.println("testando cadastro");
 		
 		String nomeEmpresa = request.getParameter("nome");
-		
+		String cnpj = request.getParameter("cnpj");
 		Empresa empresa = new Empresa();
 		
 		empresa.setNome(nomeEmpresa);
+		empresa.setCnpj(cnpj);
 		
 		Banco banco = new Banco();
 	
